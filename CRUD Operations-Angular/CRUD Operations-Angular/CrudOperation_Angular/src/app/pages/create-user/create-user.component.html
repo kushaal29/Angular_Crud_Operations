@@ -1,0 +1,26 @@
+
+<div class="abc mx-auto" style="width: 18rem; ">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input required [(ngModel)]="userData.email" type="email" class="form-control" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name </label>
+        <input required [(ngModel)]="userData.custName" type="text" class="form-control" id="exampleFormControlInput1"
+            placeholder="jonhson">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Mobile</label>
+        <input required [(ngModel)]="userData.mobileNumber" type="number" class="form-control" id="exampleFormControlInput1"
+            placeholder="mobileNumber">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">password</label>
+        <input required [(ngModel)]="userData.password" type="password" class="form-control" id="exampleFormControlInput1"
+            placeholder="**********">
+    </div>
+    <button (click)="formSubmit()" class="btn btn-success">Register</button>
+    &nbsp;
+    <button (click)="login()" class="btn btn-primary">login</button>
+</div>

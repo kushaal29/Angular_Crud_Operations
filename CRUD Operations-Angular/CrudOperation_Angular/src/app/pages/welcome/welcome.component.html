@@ -1,0 +1,21 @@
+<h1>Get all Registered User List </h1>
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let user of registeredStudent">
+        <td>{{user.custName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.mobileNumber}}</td>
+        <td> <button  class="btn btn-success" (click)="updateUser(user.custId)" >Edit</button></td>
+        <td> <button class="btn btn-danger" (click)="deleteUser(user.custId)">delete</button></td>
+    </tr>
+    <button (click)="logout()" class="btn btn-primary " style="text-align: center; margin-top: 50px;">logout</button>
+</table>
+

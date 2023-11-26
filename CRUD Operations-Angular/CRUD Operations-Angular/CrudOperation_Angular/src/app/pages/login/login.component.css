@@ -1,0 +1,14 @@
+.btn {
+    height: 20px;
+    padding: 5px 20px 20px 20px;
+    background-color: skyblue;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 36%;
+    color: #f5fbf1;
+    
+}
